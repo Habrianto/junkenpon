@@ -1,0 +1,239 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTMLS 5 Display-role reset for older browsers */
+article, aside,details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+}
+
+ul,
+li {
+   list-style: none;
+}
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* game junken */
+body {
+   background-image: url(img/bg2.jpg);
+   font-family: Arial;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   justify-content: center;
+}
+
+h1 {
+   font-size: 60px;
+   font-weight: bold;
+   text-align: center;
+   margin: 10px 0;
+   margin-top: 30px;
+   text-transform: uppercase;
+   color: black;
+   text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333, 0.7778174593px 0.7778174593px 0 #aaaaaa, 1.5556349186px 1.5556349186px 0 #aaaaaa, 2.3334523779px 2.3334523779px 0 #aaaaaa, 3.1112698372px 3.1112698372px 0 #aaaaaa, 3.8890872965px 3.8890872965px 0 #aaaaaa, 4.6669047558px 4.6669047558px 0 #aaaaaa, 5.4447222151px 5.4447222151px 0 #aaaaaa, 6.2225396744px 6.2225396744px 0 #aaaaaa, 7.0003571337px 7.0003571337px 0 #aaaaaa, 7.7781745931px 7.7781745931px 0 #aaaaaa;
+}
+
+.container {
+   width: 600px;
+   margin: auto;
+   padding: 20px;
+   position: relative;
+   margin-top: 100px;
+}
+
+.komputer {
+   width: 560px;
+   height: 250px;
+   margin: 5px auto;
+   background-color: rgb(250, 209, 143);
+   background: linear-gradient(to bottom,rgb(246, 145, 109) 0, 100%);
+   position: relative;
+   padding-top: 40px;
+   box-sizing: border-box;
+   border-radius: 40px 40px 0 0;
+}
+
+.player {
+   width: 560px;
+    height: 250px;
+    margin: 5px auto;
+    background-color: #fd834f;
+    background: linear-gradient(to bottom, rgb(237, 237, 237) 0%, 100%);
+    position: relative;
+    border-radius: 0 0 40px 40px;
+}
+
+.info {
+   width: 150px;
+   height: 60px;
+   border: 5px solid salmon;
+   position: absolute;
+   left: 50%;
+   margin-left: -75px;
+   top: 55%;
+   margin-top: -30px;
+   background-color: white;
+   border-radius: 30px;
+   z-index: 1;
+   text-align: center;
+   line-height: 60px;
+   color: #f89bb4;
+   font-size: 26px;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+ul {
+   padding-top: 80px;
+   padding-left: 25px;
+}
+
+li {
+   display: inline-block;
+   margin: 0 18px;
+
+}
+
+img {
+   width: 130px;
+   height: 130px;
+   display: block;
+   margin: auto;
+   border-radius: 50%;
+}
+
+.batu,
+.gunting,
+.kertas {
+   transition: .3s;
+   position: relative;
+   top: 0;
+   cursor: pointer;
+}
+
+.batu:hover,
+.kertas:hover,
+.gunting:hover,
+.active {
+   box-shadow: 0 0 10px 5px bisque;
+}
+
+.batu:active,
+.kertas:active,
+.gunting:active {
+   top: 2px;
+}
